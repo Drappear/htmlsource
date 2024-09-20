@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      fieldset {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>필수사항</legend>
+        <div>
+          <label for="name">이름</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="email">이메일</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="password">비밀번호</label>
+          <input type="password" name="password" id="password" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>부가 입력 사항</legend>
+        <div>
+          <label for="birth">생년월일</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <div>
+          <label for="address">거주지를 선택해주세요</label><br />
+          <select name="address" id="address">
+            <option value="">서울시</option>
+            <option value="">대전</option>
+            <option value="">대구</option>
+            <option value="">부산</option>
+          </select>
+        </div>
+        <div>
+          <label for="hobby">취미</label>
+          <label for="hobby1">독서</label>
+          <input type="checkbox" name="hobby1" id="book" value="book" />
+          <label for="hobby2">여행</label>
+          <input type="checkbox" name="hobby2" id="trip" value="travel" />
+          <label for="hobby3">영화감상</label>
+          <input type="checkbox" name="hobby3" id="movie" value="movie" />
+        </div>
+        <div>
+          <label for="sex">성별</label>
+          <label for="male">남성</label>
+          <input type="radio" name="sex" id="male" value="male" />
+          <label for="female">여성</label>
+          <input type="radio" name="sex" id="female" value="female" />
+        </div>
+        <div>
+          <label for="photo">사진을 등록해주세요</label>
+          <input type="file" name="photo" id="photo" />
+        </div>
+        <div>
+          <label for="root">방문 경로를 말씀해주세요</label><br />
+          <textarea name="root" id="root" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+      <div>
+        <button type="submit1">회원가입</button>
+        <button type="reset">재작성</button>
+        <button type="submit2">전송</button>
+      </div>
+    </form>
+  </body>
+</html>
