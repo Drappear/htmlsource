@@ -31,6 +31,28 @@
       [class*="te"] {
         background-color: green;
       }
+      [class~="test"] {
+        opacity: 0.3;
+        color: blue;
+      }
+      [class|="top"] {
+        background-color: yellow;
+      }
+
+      /* btn-로 시작 : padding - 10px, 글자 굵게, border-radius - 20px */
+      /* success로 끝나는 : 글자색 green */
+      /* danger로 끝나는 : 글자색 red */
+      [class^="btn-"] {
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 20px;
+      }
+      [class$="success"] {
+        color: green;
+      }
+      [class$="danger"] {
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -46,6 +68,11 @@
         [속성명|=값] : 값 다음에 - 이 오는
         [속성명*=값] : 특정 값을 포함하고 있는(일부 일치)
     -->
+    <div>
+      <input type="text" class="" name="" id="" />
+      <input type="text" class="" name="" id="" />
+      <input type="tel" name="" id="" />
+    </div>
     <div class="first_test">First Test</div>
     <div class="my_test">Div My Test</div>
     <p class="mytest">My Test</p>
@@ -65,5 +92,10 @@
       </li>
     </ul>
     <a href="mailto:master@google.com">마스터에게 메일 보내기</a>
+    <div>
+      <button class="btn-success">Success</button>
+      <button class="btn-danger">Danger</button>
+      <button>Normal</button>
+    </div>
   </body>
 </html>
