@@ -1,0 +1,32 @@
+/* 블릿 삭제 */
+/* ul {
+  list-style-type: none;
+} */
+
+.a {
+  /* default */
+  list-style-type: disc;
+}
+.b {
+  list-style-type: circle;
+}
+.c {
+  list-style-type: square;
+}
+
+/* ol {
+    list-style-type: none;
+} */
+
+.d {
+  list-style-type: lower-alpha;
+  list-style-position: outside;
+}
+
+.e {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+.f {
+}
