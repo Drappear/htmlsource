@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        overflow : 요소의 크기 이상으로 내용(자식요소)이 넘칠때 처리
+        1) visible(default) : 넘친 부분을 그대로 보여줌
+        2) auto : 넘친 부분이 있는 경우 잘라내고 스크롤바 생성
+        3) hidden : 넘친 부분 잘라내고 보이지 않게
+        4) scroll : 넘친 부분 스크롤바(가로 세로 모두)
+        */
+      .overflow {
+        /* block => width : auto(100%), height : 0 */
+        height: 100px;
+        background-color: silver;
+        border: 1px solid red;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="overflow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro molestias
+      aperiam sunt at aspernatur dolore, quia asperiores, odit, quibusdam dicta
+      corrupti. Tempore ex laborum, est dicta facilis excepturi sequi itaque?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odio nam ab
+      odit sunt voluptatibus ex dolore! Voluptatum beatae molestias eligendi
+      accusamus laborum cum voluptatibus iure, quae earum itaque dignissimos.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ea
+      doloremque blanditiis illo sint nesciunt autem dolorum voluptatibus
+      suscipit, modi, expedita, unde veniam. Impedit ipsam repellat dolorem?
+      Laborum, quasi magnam. Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Recusandae magni nemo sint numquam tenetur pariatur enim, porro id
+      amet, laboriosam eum laudantium consequuntur! Hic, exercitationem rem!
+      Blanditiis tenetur dolorem nobis! Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Porro molestias aperiam sunt at aspernatur dolore, quia
+      asperiores, odit, quibusdam dicta corrupti. Tempore ex laborum, est dicta
+      facilis excepturi sequi itaque? Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Quos odio nam ab odit sunt voluptatibus ex dolore!
+      Voluptatum beatae molestias eligendi accusamus laborum cum voluptatibus
+      iure, quae earum itaque dignissimos. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Delectus ea doloremque blanditiis illo sint
+      nesciunt autem dolorum voluptatibus suscipit, modi, expedita, unde veniam.
+      Impedit ipsam repellat dolorem? Laborum, quasi magnam. Lorem ipsum dolor
+      sit amet consectetur, adipisicing elit. Recusandae magni nemo sint numquam
+      tenetur pariatur enim, porro id amet, laboriosam eum laudantium
+      consequuntur! Hic, exercitationem rem! Blanditiis tenetur dolorem nobis!
+    </p>
+  </body>
+</html>

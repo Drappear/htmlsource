@@ -1,0 +1,45 @@
+/* 전체 요소 margin, padding 0 */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  border: 1px solid black;
+}
+/* 헤더의 너비는 960px 화면 가운데, 헤더의 배경색은 #ccc */
+.container {
+  width: 960px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #ccc;
+  align-content: center;
+}
+
+/* 로고는 왼쪽 */
+.container h1 {
+  float: left;
+  line-height: 60px;
+}
+.container a:link {
+  color: black;
+  text-decoration: none;
+}
+/* 메뉴는 오른쪽 */
+.container nav {
+  float: right;
+}
+.container nav ul {
+  list-style-type: none;
+}
+/* 메뉴 간격 20px */
+.container nav ul li {
+  margin-left: 20px;
+  display: inline-block;
+  line-height: 60px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

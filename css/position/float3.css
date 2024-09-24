@@ -1,0 +1,15 @@
+body {
+  background-color: gray;
+}
+
+.box {
+  background-color: white;
+  overflow: hidden; /* auto */
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}

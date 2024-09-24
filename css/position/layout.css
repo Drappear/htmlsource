@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header : 배경색#666, 안쪽 여백 30, 글자 가운데 정렬, 글자크기 35, 글자색 흰색 */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+/* nav : 너비 30%, 배경색#ccc, 안쪽 여백20 */
+nav {
+  width: 30%;
+  height: 300px;
+  background-color: #ccc;
+  padding: 20px;
+  float: left;
+}
+nav ul {
+  list-style-type: none;
+}
+
+/* article : 너비 70%, 배경색#f1f1f1, 안쪽 여백20 */
+article {
+  width: 70%;
+  height: 300px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: right;
+}
+
+/* footer : 배경색#777, 글자 가운데 정렬, 글자색 흰색, 안쪽 여백 10 */
+footer {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: #777;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

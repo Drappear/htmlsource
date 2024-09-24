@@ -1,0 +1,48 @@
+body {
+  background-color: #222;
+}
+
+.grid {
+  width: 500px;
+  margin: 0 auto;
+  background-color: white;
+
+  /*
+  float + overflow 사용한 방식 
+    overflow: hidden; 
+  */
+
+  /* 
+  inline-block 사용한 방식
+     font-size: 0;
+     text-align: right; 
+  */
+}
+/* clearfix 사용한 방식 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 100px;
+  height: 100px;
+  float: left;
+
+  /* 
+  inline-block 사용한 방식
+     display: inline-block;
+     vertical-align: top; 
+  */
+}
+
+.a {
+  background-color: orange;
+}
+.b {
+  background-color: orangered;
+}
+.c {
+  background-color: red;
+}
