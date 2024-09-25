@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.topnav {
+  background-color: #333;
+  align-content: center;
+}
+.topnav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+  /* inline 요소는 padding 반영이 잘 안됨 => block 요소로 변경 */
+  /* block 변경 : inline-block, float */
+  /* display: inline-block; */
+  float: left;
+}
+
+.topnav a:hover {
+  color: black;
+  background-color: lightgray;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    display: block;
+  }
+}
